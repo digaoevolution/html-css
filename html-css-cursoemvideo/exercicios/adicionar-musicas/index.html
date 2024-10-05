@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicas</title>
+</head>
+<body>
+    <h1>Colocando Musicas no Site</h1>
+    <p>aprendendo a colocar audio</p>
+    <audio src="audio/In My Mind.mp3" controls>In my mynd</audio>
+    <!--esse e a maneira mais simples para adicionar-->
+    
+    <audio preload="metadata" autoplay controls loop>
+        <source src="audio/In My Mind.mp3" type="audio/mp3">
+        <source src="audio/In My Mind.ogg" type="audio/ogg">
+        <source src="audio/In My Mind.wav" type="audiowav"><!--evite wav muito pesado - melhor mp3-->
+        <!--essa e a maneira caso tenha imcompatibilidade-->
+    </audio>
+</body>
+</html>

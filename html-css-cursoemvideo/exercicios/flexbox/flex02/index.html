@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direções e Eixos</title>
+    <style>
+        /* --------->>-FLEX-DIRECTION--<<--------
+
+             flex-direction: row = esquerda p/ direita.
+             flex-direction: row-reverse = direita para esquerda.
+         *por padrão fica com configuração flex-direction: 'row'= linha.
+             flex-direction: column = cima p/ baixo.
+             flex-direction: column-reverse = baixo p/ cima.
+
+           ------------>> EIXOS <<---------------
+
+            main-axis = linha esquerda p/ direita.
+                main-start = esquerda = inicio
+                main-end = direita = fim
+            cross-axis = coluna cim p/ baixo
+                cross-start = cima = inicio
+                cross-end = baixo = fim
+        */
+        /* importante saber quem e o PAI, que leva a configuração base que vai conter todos os itens. recebendo configuração (display: flex)*/  
+        div.container {/* PAI */
+            background-color: rgb(226, 252, 134);
+
+            display: flex;/* Principal */
+            flex-direction: column;
+        }
+        div.item {/* FILHO que esta dentro da div.container(PAI)*/
+            background-color: blue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex: auto;/* para adaptação fluida*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>

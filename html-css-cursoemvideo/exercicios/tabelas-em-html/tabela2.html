@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;/*colar as colunas e linas*/
+            position: relative;/*configuraçao comportamental*/
+
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 3px;
+        }
+        thead, tfoot {
+            background-color: rgb(85, 85, 85);
+            color: white;
+        }
+        .num {
+            text-align: right;
+        }
+        caption {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border-radius: 5px 5px 0px 0px;
+        }
+        thead > tr > th {
+            position: sticky;/*grudavel*/
+            top: -1px;/*complemento do grudavel*/
+            background-color: rgb(85, 85, 85);
+        }
+        tbody > tr:nth-child(2n) {
+            /*para zebrar as linhas com fundo branco */
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(even) {
+            /*para adicionar cor zebrada desejada usando 
+            odd ou even (par ou impar) nas linhas*/
+            background-color: rgb(0, 204, 255);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabela Grande</h1>
+    
+    <!-- **ANATOMIA PARA TABELAS GRANDES**
+            TABLE
+                CAPTION
+                THEAD
+                    TR, TD, TH
+                TBODY
+                    TR, TD, TH
+                TFOOT
+                    TR, TD, TH
+    -->
+<table>
+    <caption>Censo 2022 IBGE. Consultado em 28 de junho de 2023</caption>
+    <thead>
+        <tr>
+            <!--scope"col" para deixar claro o titulo da coluna-->
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th><!--mudar largura da populaçao pontualmente adicionando style+width-->
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num">44.411.238</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>	
+            <td class="num">20.538.718</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>	
+            <td class="num">16.054.524</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>	
+            <td class="num">14.141.626</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>	
+            <td class="num">11.443.208</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>	
+            <td class="num">11.377.239</td>
+        </tr>
+        <tr>
+            <td>Pernambuco</td>	
+            <td class="num">9.557.777</td>
+        </tr>
+        <tr>
+            <td>Ceará</td>	
+            <td class="num">9.187.103</td>
+        </tr>
+        <tr>
+            <td>Maranhão</td>	
+            <td class="num">7.315.328</td>
+        </tr>
+        <tr>
+            <td>Pará</td>	
+            <td class="num">8.690.115</td>
+        </tr>
+        <tr>
+            <td>Goiás</td>	
+            <td class="num">7.185.326</td>
+        </tr>
+        <tr>
+            <td>Amazonas</td>	
+            <td class="num">4.227.779</td>
+        </tr>
+        <tr>
+            <td>Santa Catarina</td>	
+            <td class="num">7.216.472</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso</td>	
+            <td class="num">3.526.220</td>
+        </tr>
+        <tr>
+            <td>Espírito Santo</td>	
+            <td class="num">4.064.052</td>
+        </tr>
+        <tr>
+            <td>Paraíba</td>	
+            <td class="num">4.039.277</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Norte</td>	
+            <td class="num">3.534.165</td>
+        </tr>
+        <tr>
+            <td>Alagoas</td>	
+            <td class="num">3.337.357</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso do Sul</td>	
+            <td class="num">2.802.772</td>
+        </tr>
+        <tr>
+            <td>Piauí</td>	
+            <td class="num">3.281.480</td>
+        </tr>
+        <tr>
+            <td>Sergipe</td>	
+            <td class="num">2.318.188</td>
+        </tr>
+        <tr>
+            <td>Rondônia</td>	
+            <td class="num">1.817.763</td>
+        </tr>
+        <tr>
+            <td>Tocantins</td>	
+            <td class="num">1.630.120</td>
+        </tr>
+        <tr>
+            <td>Acre</td>	
+            <td class="num">893.075</td>
+        </tr>
+        <tr>
+            <td>Amapá</td>	
+            <td class="num">861.783</td>
+        </tr>
+        <tr>
+            <td>Roraima</td>	
+            <td class="num">652.717</td>
+        </tr>
+        <tr>
+            <td>Distrito Federal</td>	
+            <td class="num">3.107.860</td>
+        </tr>
+    </tbody>
+<tfoot>
+    <tr>
+        <!--scope"row" ja se refere ao titulo da linha.-->
+        <th scope="row">População Total do Brasil</th>
+        <td class="num">206.188.616</td>
+    </tr>
+</tfoot>
+</table>
+    <p>
+        Lorem ipsum dolor <br> sit amet, consectetur <br> adipisicing elit. Ad cumque quos dignissimos consequatur in exercitationem fuga esse. Repudiandae nostrum culpa non <br> recusandae ea quod hic, nam error aperiam doloribus quas.
+        Quidem ea eius fu <br>git saepe sit corporis <br> sapiente pariatur praesentium natus nostrum quod omnis <br> ratione quis harum rem autem quo possimus, repellat, reprehenderit  <br>quae cupiditate delectus libero. Minima, <br> repellat omnis?
+        Deserunt minus sa <br>epe, culpa delectus dicta totam excepturi dignissimos, tempora adipisci libero doloribus quos dolorum optio nam corporis deleniti vero neque asperiores, non veniam suscipit repellendus ex nemo. Repellendus, qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione aspernatur impedit numquam nostrum ex optio, consectetur odit voluptatem repudiandae sapiente? Sapiente earum laboriosam, quibusdam debitis accusantium enim doloribus eius sit.
+        Eius reiciendis mollitia ut sapiente omnis est. Aperiam pariatur laboriosam ut similique perferendis perspiciatis ad. Quam pariatur laudantium minus veritatis ipsam vero hic veniam eaque debitis. Corporis sapiente illum voluptate.
+        Vero assumenda, minima non libero, excepturi quibusdam similique deserunt ea maiores laboriosam provident ipsum cupiditate tempore iure sint doloribus autem aliquam laborum molestias, vitae debitis nesciunt beatae! Asperiores, impedit facilis.
+        Sapiente perferendis ipsa exercitationem consequuntur nam delectus a, maxime architecto quo porro dolorum tenetur et est corporis, ut nesciunt recusandae, voluptatum nobis sunt beatae. Tempora voluptate aliquid consequuntur quia ipsam.
+        Facere neque laudantium iste aspernatur dolore aliquid est? Aperiam, quae reprehenderit maxime architecto repellendus iste laudantium iure saepe facilis ad non voluptatum ullam illum facere harum minus eum, qui nobis?
+        Dolores, unde error et rem voluptas officia aliquam magni quisquam. Ex illo quas unde laboriosam reiciendis officia rerum repellendus praesentium ea inventore sapiente corrupti facilis, porro magnam tempora non totam?
+        Maxime modi, eius adipisci tenetur, cupiditate consequatur autem ipsum sint commodi dignissimos magnam officia inventore id, recusandae aliquid vero facere explicabo quia suscipit officiis. Non asperiores id veniam similique vitae.
+        Deleniti ex sunt architecto rerum, eos, a sapiente atque voluptate ducimus laboriosam necessitatibus consectetur facilis temporibus dolores deserunt perspiciatis quidem vel magni iusto? Perferendis reprehenderit itaque minus, molestias ex aliquam!
+        Magni cum culpa totam quos omnis, molestias, libero autem, repudiandae impedit temporibus mollitia quod cupiditate illo aspernatur exercitationem! Odio quod ipsam hic quae rem, quaerat molestiae modi labore dignissimos necessitatibus.
+        Facilis numquam a iure? Cum sequi labore eligendi, assumenda ab expedita, tempore eveniet nobis explicabo, consectetur dolores veniam. Delectus, ducimus blanditiis temporibus repellendus voluptates necessitatibus quibusdam. Amet sed corrupti incidunt!
+    </p>
+</body>
+</html>

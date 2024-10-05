@@ -1,0 +1,23 @@
+@charset "UTF-8";
+h1{
+    color: white; text-align: center;
+}
+body{
+    background-image: linear-gradient(to left, blue, black, black );
+    height: 100%;
+}
+main {
+    text-align: center;
+    margin: auto;
+    width: 700px;
+    padding: 1px;  
+}
+iframe {
+    text-align: center;
+    margin: auto;
+    width: 700px;
+    padding: 10;
+}
+div {
+    text-align: center;
+}

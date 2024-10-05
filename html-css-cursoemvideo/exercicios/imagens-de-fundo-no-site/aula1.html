@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens de Fundo</title>
+    <style>
+        div.quadrado {
+            border: 1px solid black;/*espessura linha borda*/
+            width: 200px;/*largura*/
+            height: 200px;/*altura*/
+            display: inline-block;/*para deixar latelarizado*/
+            border-radius: 10px;/*arredonadar bordas*/
+            background-color: rgb(197, 197, 197);/*cor fundo*/ 
+        }
+        div#q1 {
+            background-color: chartreuse;/*cor de fundo normal*/
+        }
+        div#q2 {
+            background-image: linear-gradient(to top, red, green);/*degrade*/
+        }
+        div#q3 {
+            background-image: url(imagens/pattern004.png);/*imagen ou foto inportada*/
+        }
+        div#q4 {
+            background-image: url("https://avatars.githubusercontent.com/u/30007652?s=96&v=4");
+            /*imagen do meu perfil do Github*/
+            background-repeat: no-repeat;/*nao repetir ou repetir a imagen*/
+            background-size: 100%;/*imagem preenchida em % no espaço*/
+        }
+        
+        body {
+            background-image: url(imagens/wallpaper002.jpg);  
+        }
+        h1 {
+            color: white;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="quadrado" id="q1">caixa1</div>
+    <div class="quadrado" id="q2">caixa2</div>
+    <div class="quadrado" id="q3">caixa3</div>
+    <div class="quadrado" id="q4">caixa4</div>
+</body>
+</html>

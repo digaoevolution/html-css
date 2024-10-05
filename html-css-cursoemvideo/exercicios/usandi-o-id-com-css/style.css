@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*id somente um mas tambem pode usar class+id. class pode ser varios com nomes diferentes e tambem pode aplicar mais de um class para um elemento*/
+body {
+    background-color: rgb(168, 194, 252);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#principal {
+    /*id usa # com o nome dado sem espaço para chamar (#principal) como esse exemplo usado*/
+    text-align: center;
+    background-color: rgb(177, 255, 99);
+    border-radius: 10px;
+    width: 400px;
+}
+.basico {
+    /*class usa ponto e nome dado sem espaço para chamar (.basico) com esse exemplo usado*/
+    background-color: chartreuse;
+}
+h1 {
+    color: rgb(150, 75, 6);
+}
+h2 {
+    color: rgb(17, 68, 4);
+}

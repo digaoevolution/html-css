@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*
+font-family - tipos de letras
+font-size   - tamanho em pixel ou em ex:(1em)
+font-style  - italico, norma, oblique
+font-weight - espessura da fonte
+
+    -----adicioando fontes externas------
+- google fontes = www.fontsgoogle.com
+1 - seleciona a fonte / codigo de incorporação / @import / 
+    copia codigo entre <style> / colar no inicio do documento css / 
+2 - copia o codigo font-family e cola no titulo ou paragrafo desejado.
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sofadi+One&display=swap');
+
+body{
+    background-color: lightgrey;
+    font-family: "Sofadi One", system-ui;
+}
+h1{
+    background-color: lightslategray;
+    font-family: "Dancing Script", cursive;
+}
+.p1{
+    background-color: lightcyan;
+    padding: 10px;
+    font-size: 19px;
+}
+.p2{
+    background-color: lightgreen;
+    padding: 10px;
+    font-size: 19px;
+    font-style: italic;
+}
+.p3{
+    background-color: lightskyblue;
+    padding: 10px;
+    font-size: 19px;
+    font-style: oblique;
+    font-weight: bold;
+}

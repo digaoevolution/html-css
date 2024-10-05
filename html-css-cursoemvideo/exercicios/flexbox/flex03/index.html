@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-basis, Flex-grow e Flex-shrink</title>
+    <style>
+         
+        div.container {
+            background-color: rgb(231, 40, 40);
+            flex-basis: 450px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.item {
+            background-color: blue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+            
+        }
+        /*por padrao 
+        flex-shrink = 1 
+        flex-grow = 0 
+
+            -shrink == encolher
+            -grow   == cresce
+             numero é a proporção diferencial entre crescer/encolher
+        */
+        div#iflex1 {
+            
+            flex-grow: 2;
+            flex-shrink: 0; 
+        }
+        div#iflex2 {
+            
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+        div#iflex3 {
+            
+            flex-grow: 3;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex-basis, Flex-grow e Flex-shrink</h1>
+    <div class="container">
+        <div class="item" id="iflex1">1</div>
+        <div class="item" id="iflex2">2</div>
+        <div class="item" id="iflex3">3</div>
+    </div>
+</body>
+</html>

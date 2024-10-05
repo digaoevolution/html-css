@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: rgb(224, 224, 224);
+    width: 100vw;
+    height: 100vh;
+}
+header {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    
+    
+}
+header > h1 {
+    /*
+    border: 1px dotted black; = borda pontilhada
+    */
+    margin: 5px;
+    flex: 0 0 200px;
+    
+    
+}
+header > nav {
+
+    /*
+    border: 1px dotted black; = borda pontilhada
+    */
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    
+}
+header > nav > a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    
+    
+    
+}
+header > nav > a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-shadow: 1px 0px 0px black;
+    transition: .4s;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    
+    
+    
+    
+    border-radius: 10px;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.514);
+    
+    
+}
+main > h2 {
+    padding: 5px;
+    
+}

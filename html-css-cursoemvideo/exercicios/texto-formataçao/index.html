@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragrafo</title>
+</head>
+<body>
+    <h1>Paragrafo </h1>
+    <h2> quebra de linhas, simbolos e emojis</h2>
+    <hr>
+    <p>para criar paragrafo usa tag &lt;p&gt; &lt;/p&gt; e escreve entre elas</p>
+    <!--para mostrar os sinais <  > usa &lt; para o (<) &gt; para(>)-->
+    <h3>quebra de linhas</h3>
+    <p>para quebra de linha usa a tag &lt;br&gt; assim fazendo o texto <br>pule para baixo!</p>
+
+    <h3>simbolos</h3>
+    <p>&real; &euro; &cent; &delta; &omega;</p><!--utiliza o Ecomercial (&) com descriçao lateral-->
+
+    <h3>emogis</h3>
+    <p>para adicionar emojis entra no site emojipedia.org</p>
+    <p>&#x1f913; &#x1f557; &#x1f914; &#x1f951;</p>
+    
+    <h3>hierarquia de titulos</h3>
+    <p>para utilizar titulos temos que respeitar os niveis dos titulos e subtitulos</p>
+    <ol>
+        <li>&lt;h1&gt;</li>
+        <li>&lt;h2&gt;</li>
+        <li>&lt;h3&gt;</li>
+        <li>ate&lt;h6&gt; somente</li>
+    </ol>
+
+    <h3>negrito - destaque - Italico</h3>
+    <p>Lorem <strong>ipsum dolor sit</strong>
+        <!--tag strong para negrito com semandtica-->
+        amet consectetur, adipisicing elit. Quod beatae accusamus nulla quibusdam repellendus <em>quasi quae praesentium</em>
+        <!---tag em para Italico com semantica-->
+        <br> et, officiis tempora officia qui, in est voluptates fugit, quis ratione odit amet.</p>
+    <!---utilize o envelopamento ctrl+shift+p / abbrevietion -->
+
+    <h3>texto marcado</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <mark>Voluptatem exercitationem voluptate id dolore</mark> 
+        <!--para marcar o texto usa tag mark envelopando o texto selecionado-->
+        sunt eius quisquam alias, nostrum porro incidunt, laboriosam repellat eum veniam. Vero ducimus nesciunt ad in voluptatem.</p>
+        
+        <h3>mudar cor do marcador</h3>
+        <p>Lorem, <mark style="background-color: darkorchid;">
+            <!--adiciona style e background-color e seleciona a cor. mas essa etapa apenas para um marcador especifico-->
+            ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nihil illum</mark> rerum itaque magni cum aperiam maxime accusamus eaque autem, quos voluptates maiores earum ab? Iusto, repellendus quibusdam! Minima, enim?</p>
+    <!--para mudar a cor de todos marcadores de uma vez cria um seletor style logo abaixo de <title></title> ex:
+    <title></title>
+        <style>
+            mark {
+            background-color; a cor desejada;
+             }
+        </style>-->
+    
+        <h3>texto destaque pequeno e grande</h3>
+        <p>para usar destaque texto peueno como ex: leia as letras pequenas do contrato usa tag small ou big para grande</p>
+        <p>Lorem <small>ipsum dolor sit amet</small> consectetur adipisicing elit. Autem dicta, ducimus culpa, labore numquam impedit <big>officia consequatur</big>, nemo eos aut beatae enim fugit excepturi facilis possimus illum laudantium. Mollitia, labore?</p>
+
+        <h3>texto deletado ou inserido</h3>
+        <!--podemos marcar com enfase como excluido um texto com tag <del> e sublinhado com tag <ins> -->
+        <p>Lorem ipsum <del>dolor sit amet consectetur</del> adipisicing elit. Alias, molestiae aspernatur! Nostrum voluptate <ins>unde nisi laboriosam iure quae a</ins>. Deserunt unde neque laboriosam repudiandae ipsum. Expedita voluptas inventore libero eum!</p>
+        <h3>texto sobrescrito ou subescrito</h3>
+        <!--para elevar ao quadrado usa tag<sup> para abaixar usa tag <sub>-->
+        <p>Lorem ipsum dolor H<sub>2</sub>O sit amet consectetur adipisicing elit. Quibusdam rerum iste quam eum totam libero X<sup>2</sup>.10x<sup>2</sup> autem et consequuntur placeat, nostrum labore deleniti! Quidem, et nisi quos neque libero adipisci voluptas!</p>
+
+        <h3>texto mono espaçado</h3>
+        <p>Lorem ipsum dolor <code>document.getElementById('teste')</code> sit, amet consectetur adipisicing elit. Libero ab, ex, repellendus illum cupiditate aspernatur dignissimos odit error repudiandae pariatur beatae.!</p>
+        <!--otimo para quando se usa comandos java ou python fazendo assim tem uma boa visualizaçao e entendimento. ex:-->
+        <code>
+            num = int(imput('digite um numero'))
+            if num % 2 == 0:
+                print(f'o numero {num} e par')
+            else:
+                print (f'o numero {num} e impar')
+            print('fim do programa')
+        </code>
+        <p>assim acima fica sem identaçao mas abaixo fica melhor</p>
+        <!--utiliza tag <pre> envelopando todo codigo desejado para sair como formatado e com quebras de linhas de maneira correta!....... para movimantaçao seleciona todo codigo desejado e shift + tab reduz tabulaçao e somente tab avanca espaço tabulaçao -->
+        <pre>
+        <code>
+            num = int(imput('digite um numero'))
+            if num % 2 == 0:
+                print(f'o numero {num} e par')
+            else:
+                print (f'o numero {num} e impar')
+            print('fim do programa')
+        </code>
+        </pre>
+        <h3>citaçoes</h3>
+        
+        <p>como diria o pai de um amigo:
+            o computador e um burro muito rapido!
+        </p>
+        <!--para citaçoes usando aspas usa tag <q> marcando o texto da citaçao desejada ex:-->
+        <p>como diria o pai de um amigo:<q>o computador e um burro muito rapido!</q>
+        </p>
+
+    
+</body>
+</html>

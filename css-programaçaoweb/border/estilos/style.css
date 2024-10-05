@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body{
+    background-color: white;
+}
+h1{
+    color: darkblue;
+    border: 5px solid black;/*mais usadas*/
+}
+.p1{
+    color: darkgreen;
+    border: 5px dotted black;/*mais usadas*/
+}
+.p2{
+    border: 5px dashed black;/*mais usadas*/
+}
+.p3{
+    border: 5px double black;
+}
+.p4{
+    border: 10px groove black;
+}
+.p5{
+    border: 10px ridge black;
+}
+.p6{
+    border: 10px inset black;
+}
+.p7{
+    border: 10px outset black;
+}
+.p8{
+    border-top: 10px solid rgb(153, 34, 34);
+    border-bottom: 10px solid rgb(95, 34, 153);
+    border-left: 10px solid rgb(20, 177, 46);
+    border-right: 10px solid rgb(160, 170, 26);
+}
+.p9{
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}

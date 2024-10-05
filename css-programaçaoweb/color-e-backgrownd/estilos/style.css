@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(131, 131, 129);
+}
+h1{
+    color: darkblue;
+}
+p{
+    color: darkgreen;
+}
+.exback{
+    background-color: brown;
+    height: 80vh;
+    width: 90vw;
+
+    background-image: url(../image/pexels.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}

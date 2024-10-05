@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+*{
+    padding: 5px;
+    margin: 5px;
+}
+body{
+    background-color: bisque;
+}
+h1{
+    background-color: brown;
+    color: white; 
+}
+h1, p{
+    text-align: center;
+}
+#iparagr{
+    background-color: lightgray;
+}
+.clparagr{
+    background-color: gray;
+}

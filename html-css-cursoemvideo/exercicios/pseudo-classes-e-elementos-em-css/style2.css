@@ -1,0 +1,16 @@
+@charset "UTF-8";
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+div:hover {
+    color: red;
+}
+div > p {
+    display: none;
+}
+div:hover > p {
+    display: block;
+    color: rgb(23, 3, 94);
+    background-color: dodgerblue;
+    width: 150px;
+}

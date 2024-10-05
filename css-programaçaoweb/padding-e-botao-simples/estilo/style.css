@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    background-color: rgb(122, 202, 255);
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    /*paddin faz o afastamento interno
+
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 130px;
+
+    **Abaixo tudo em uma declaração só**
+
+    ---------shorthend = encurtar--------- 
+    nessa sequencia de direção:
+        top -> right -> bottom -> left ->
+     */
+    padding: 50px 50px 50px 130px;
+}
+p{
+    background-color: lightgrey;
+    border: 3px solid black;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.botao{
+    /*padding e muito usado para botões*/
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: 5px solid black;
+    margin: 41%;
+    text-decoration: none;
+    
+    padding: 10px 10px 10px 10px;
+}
+.botao:hover{
+    background-color: rgb(56, 191, 224);
+    color: black;
+    border-radius: 20px;
+}
